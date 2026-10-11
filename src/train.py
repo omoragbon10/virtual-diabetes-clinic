@@ -33,6 +33,6 @@ def train(version: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--version", type=str, required=True, choices=["v0.1", "v0.2"])
+    parser.add_argument("--version", type=str, required=True)
     args = parser.parse_args()
     train(args.version)
